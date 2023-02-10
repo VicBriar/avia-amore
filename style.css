@@ -68,6 +68,41 @@ main > * {
   margin-bottom: .5rem;
 }
 
-/* media queries */
-
-/* YOUR CODE HERE */
+@media screen and (max-width: 768px) {
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .airplane-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.airplane-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 1vh;
+    padding: 1vh;
+    width: 95vh;
+    min-width: 336px;
+  }
+  div > img {
+    max-height: 25%;
+  }
+  div > * {
+    padding: 1vh;
+    margin: 1vh;
+    font-size: 1.5rem;
+  }
+}
